@@ -15,6 +15,7 @@
           rgba(191, 191, 210, 1) 30%,
           rgba(0, 0, 0, 1) 100%
         );
+
         display: flex;
         color: rgb(0, 0, 0);
         margin: 2px;
@@ -25,6 +26,7 @@
       }
       .boton {
         text-decoration: none;
+        text-align: center;
         color: white;
         display: flex;
         padding: 10px;
@@ -37,10 +39,33 @@
           rgba(255, 255, 255, 1) 0%
         );
       }
+      .contenedor {
+        display: none;
+      }
+      .botone {
+        padding: 15px;
+      }
+
       @media (max-width: 300px) {
         body {
           flex-direction: column;
           align-items: center;
+        }
+        .contenedor {
+          width: 300px;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .contenedor img {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: cover;
+        }
+        .botone {
+          display: flex;
+          padding: 15px;
         }
       }
     </style>
@@ -51,7 +76,13 @@
     /></a>
 
     <h1>Interesado en los discos/vinilos?</h1>
-
-    <a href="inscribite.html" ; class="boton" ; target="_blank" ;>Descubrilo</a>
+    <div class="contenedor">
+      <img src="disco1.png" alt="Descripción de la imagen" />
+    </div>
+    <div class="botone">
+      <a href="inscribite.html" ; class="boton" ; target="_blank" ;
+        >Descubrilo</a
+      >
+    </div>
   </body>
 </html>
