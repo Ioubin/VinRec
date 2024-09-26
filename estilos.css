@@ -274,8 +274,7 @@ footer {
   }
   .anuncio {
     width: 300px;
-    height: 250px;
-    overflow: hidden;
+    height: 600px;
     background: #000;
   }
   .contendoraanuncio {
