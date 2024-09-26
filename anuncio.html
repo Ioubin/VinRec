@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Anuncio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+
+      body {
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(191, 191, 210, 1) 30%,
+          rgba(0, 0, 0, 1) 100%
+        );
+        display: flex;
+        color: rgb(0, 0, 0);
+        margin: 2px;
+        align-items: center;
+      }
+      .logo {
+        height: 30px;
+      }
+      .boton {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        padding: 10px;
+        margin: auto;
+        border-radius: 50px;
+        border: 2px solid rgb(38, 39, 39);
+        background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 1) 100% rgba(191, 191, 210, 1) 30%,
+          rgba(255, 255, 255, 1) 0%
+        );
+      }
+      @media (max-width: 300px) {
+        body {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="index.html" ; target="_blank"
+      ><img src="logo.png" ; height="80px"
+    /></a>
+
+    <h1>Interesado en los discos/vinilos?</h1>
+
+    <a href="inscribite.html" ; class="boton" ; target="_blank" ;>Descubrilo</a>
+  </body>
+</html>

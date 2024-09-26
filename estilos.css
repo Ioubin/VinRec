@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+header {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(191, 191, 210, 1) 30%
+  );
+  border: 5px solid #000;
+}
+body {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(191, 191, 210, 1) 30%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+}
+.redes {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+}
+.contenedora {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+.caja1 {
+  width: 75%;
+  padding: 10px;
+  margin: 0.5%;
+  display: flex;
+  justify-content: center;
+}
+.caja2 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 0.5%;
+  border: 5px;
+}
+footer {
+  display: flex;
+  padding: 20px;
+  flex-direction: row;
+  justify-content: center;
+}
+.fila {
+  display: flex;
+}
+.columna {
+  flex: 33.33%;
+  padding: 5px;
+}
+.boton {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  line-height: 18px;
+  padding: 10px;
+  border-radius: 50px;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(191, 191, 210, 1) 0%,
+    rgba(0, 0, 0, 1) 65%
+  );
+  box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+  border: 2px solid rgb(38, 39, 39);
+  display: inline-block;
+}
+.boton:hover {
+  background: #a4abaf;
+}
+.boton:active {
+  background: #dfe3e6;
+}
+.slider1 {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  position: relative;
+}
+.prev {
+  position: absolute;
+  bottom: 50%;
+  left: 10px;
+  font-size: 50px;
+  color: black;
+}
+.next {
+  position: absolute;
+  bottom: 50%;
+  right: 10px;
+  font-size: 50px;
+  color: black;
+}
+.h2 {
+  display: flex;
+  color: rgb(0, 0, 0);
+  justify-content: center;
+  padding: 8px;
+}
+.input {
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  width: 300px;
+}
+.botonenvio {
+  background-color: rgb(38, 39, 39);
+  color: white;
+  display: flex;
+}
+.form {
+  max-width: 800px;
+  margin: auto;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+.columna2 {
+  flex: 50%;
+  padding: 5px;
+}
+.slider2 {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  position: relative;
+  display: none;
+}
+.fila2 {
+  display: flex;
+  display: none;
+}
+.anuncio {
+  width: 728px;
+  height: 90px;
+  overflow: hidden;
+  background: #000;
+}
+.contendoraanuncio {
+  display: flex;
+  padding: 15px;
+  justify-content: space-evenly;
+}
+.esco {
+  display: none;
+  text-decoration: none;
+}
+.logo {
+  overflow: hidden;
+}
+.redes {
+  color: #000;
+}
+@media (max-width: 768px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+  nav {
+    display: flex;
+  }
+  .boton {
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedora {
+    width: 100%;
+  }
+  .caja1 {
+    width: 86%;
+  }
+  .slider1 {
+    display: flex;
+    padding: 10px;
+    position: relative;
+    flex-direction: column;
+  }
+  .fila2 {
+    display: block;
+  }
+  .fila {
+    display: none;
+  }
+  .columna {
+    flex: 50%;
+    padding: 5px;
+  }
+}
+@media (max-width: 480px) {
+  .responsive {
+    width: 100%;
+  }
+  #icono {
+    display: block;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    text-decoration: none;
+  }
+  nav {
+    display: none;
+  }
+  nav a {
+    display: block;
+    margin: 10px;
+  }
+  .mostrarmenu {
+    display: block;
+  }
+  header {
+    display: block;
+    text-align: center;
+  }
+  .caja2columnas {
+    width: 99%;
+  }
+  .caja1 {
+    width: 100%;
+  }
+  .columna {
+    flex: 50%;
+    padding: 5px;
+  }
+  .slider1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .fila2 {
+    display: block;
+  }
+  .fila {
+    display: none;
+  }
+  .anuncio {
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    background: #000;
+  }
+  .contendoraanuncio {
+    display: flex;
+  }
+  .esco {
+    display: block;
+    text-decoration: none;
+    color: black;
+  }
+  .h2 {
+    display: flex;
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
