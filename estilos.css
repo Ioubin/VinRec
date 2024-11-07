@@ -76,6 +76,7 @@ footer {
 }
 .fila {
   display: flex;
+  padding: 50px;
 }
 .columna {
   flex: 33.33%;
